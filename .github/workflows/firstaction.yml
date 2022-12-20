@@ -6,5 +6,10 @@ jobs:
     steps:
       - name: print helloworld
         run: echo "hello world!"
-      - name: print date using linux commad
-        run: date
+      - name: Multiple commands
+        run: |
+            date
+            pwd
+            whoami
+            hostname
+            
