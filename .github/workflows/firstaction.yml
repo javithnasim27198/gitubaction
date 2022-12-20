@@ -1,0 +1,10 @@
+name: Fisrt Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print helloworld
+        run: echo "hello world!"
+      - name: print date using linux commad
+        run: date
