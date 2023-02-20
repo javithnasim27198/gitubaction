@@ -1,7 +1,11 @@
-name: Fisrt Workflow
-on: workflow_dispatch
+name: Second Workflow
+on: 
+  workflow_dispatch:
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
-  first-job:
+  second-job:
     runs-on: ubuntu-latest
     steps:
       - name: print helloworld
